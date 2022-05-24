@@ -44,11 +44,11 @@ Chromeで「chrome://version/」を開き，「プロフィール パス」に�
 （自分で開いたブラウザとは異なります。Seleniumのスクリプトを実行して起動したブラウザに設定してください。）
 https://chrome.google.com/webstore/detail/proxy-helper/mnloefcpaepkpmhaoipjkpikbnkmbnic/support?hl=ja
 
-拡張機能の設定を行います。  
+拡張機能の設定を行います。（〇〇〇〇は会社名に置き換えてください。）
 GeneralのProxy Serversに以下を設定してください。
 - HTTPS PROXY: proxy1.〇〇〇〇info.jp
 - PORT: 8089
-PACのPac URLに以下を設定してください。（〇〇〇〇は会社名に置き換えてください。）
+PACのPac URLに以下を設定してください。
 - https://proxy.〇〇〇〇info.jp/pac/proxy.pac
 AuthentificationのAuthentificationに以下を設定してください。
 - Username: 社員番号
