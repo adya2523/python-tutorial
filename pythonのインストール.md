@@ -2,18 +2,17 @@
 
 Dockerを使えば、Anacondaのコンテナをすぐに利用可能で、
 そこに含まれるJupyterNotebookを使うことでPythonの実行が可能です。
-Dockerで構築する場合は、以下を参照してください。
-https://github.com/adya2523/docker-anaconda
-ただし、Ssleniumなどブラウザを起動して動かすプログラムを利用することもあるので，  
-以下の手順でローカルに構築しておくことをお勧めします。
+Dockerで構築する場合は、以下を参照してください。  
+https://github.com/adya2523/docker-anaconda  
+ただし、Ssleniumなどブラウザを起動して動かすプログラムを利用することもあるので，以下の手順でローカルに構築しておくことをお勧めします。
 
 # Pythonのインストール
-以下のサイトより、「Download Python ~」をクリックしてPythonをダウンロードします。
-https://www.python.org/downloads/
+以下のサイトより、「Download Python ~」をクリックしてPythonをダウンロードします。  
+https://www.python.org/downloads/  
 ![](img/download_python.png)
 
 インストーラを起動して、  
-「Add Python ~ ro PATH」をチェックしてから「Install Now」を選択してください。
+「Add Python ~ ro PATH」をチェックしてから「Install Now」を選択してください。  
 ![](img/install_python.png)
 
 
@@ -39,10 +38,10 @@ proxy = 社員番号:COMPASSパスワード@proxy1.〇〇〇〇info.jp:8089
 ```
 
 # Visual Studio Codeのインストール
-ソフトウエア開発のデファクトスタンダードであるコードエディタのVisual Studio Codeをインストールします。
+ソフトウエア開発のデファクトスタンダードであるコードエディタのVisual Studio Codeをインストールします。  
 Pythonの実行やデバッグも簡単にできます。
 
-以下のサイトより、「Download for Windows」をクリックしてダウンロードします。
+以下のサイトより、「Download for Windows」をクリックしてダウンロードします。  
 https://code.visualstudio.com
 
 ![](img/download_vscode.png)
@@ -54,7 +53,7 @@ https://code.visualstudio.com
 
 # Pythonの実行
 エクスプローラでどこか適当な場所にPythonの作業用フォルダを作成してください。
-そのフォルダの中に，test.pyなど拡張子が.pyのファイルを作成してください。
+そのフォルダの中に、test.pyなど拡張子が.pyのファイルを作成してください。
 
 作成したフォルダを右クリックして「Codeで開く」を選択すると、
 選択したフォルダをワーキングディレクトリとしてvscodeが起動します。
@@ -73,24 +72,23 @@ today = now.strftime('%Y年%m月%d日') # 現在時刻を年月曜日で表示
 print(today)
 ```
 
-vscodeから実行したい場合は、右上の▷をクリックすることで、
-vscode内にPowerShellが表示されて、表示しているpythonファイルが実行されます。  
+vscodeから実行したい場合は、右上の▷をクリックするか，上メニュの「ターミナル(T)」->「新しいターミナル」でPowerShellを開いて`python test.py`により実行できます。  
 ![](img/vscode_execute.png)  
 
 もちろん、コマンドプロンプトからでも実行できます。
 pythonを実行するには「python 【pythonファイル】」で実行できます。  
 ![](img/cmd_execute.png)  
 
-ipynbはJupyterNotebookで扱うファイル形式ですが、
-vscodeを使うとJupyterNotebookをインストールしていなくてもipynbを扱えます。
 
 ## ipynbについて
 ファイル内に記載されているプログラムがすべて実行されますが、
 部分的にコードを実行したい場合も多々あります。
 
 「Pythonの環境構築」で紹介したJupyterNotebookを使えば、
-1つのファイルであってもコードを部分的に「コードブロック」と呼ばれる単位での実行が可能になります。
+1つのファイルであってもコードを部分的に「コードブロック」と呼ばれる単位での実行が可能になります。  
 これは、.ipynbという拡張子を用いると使うことができます。  
+ipynbはJupyterNotebookで扱うファイル形式ですが、
+vscodeを使うとJupyterNotebookをインストールしていなくてもipynbを扱えます。  
 ![](img/jupyter.png)  
 
 ipynbの中身は以下のようなjson形式で書かれます。  
@@ -99,13 +97,13 @@ ipynbの中身は以下のようなjson形式で書かれます。
 ipynbはJupyterNotebook専用の形式ですが、
 vscodeでも拡張機能をいれることで扱えるようになります。
 
-vscodeの拡張機能は左の□が重なっているマークから「python」と検索して一番上に出てくる  
+vscodeの拡張機能は左の![](img/extention.png)から「python」と検索して一番上に出てくる  
 拡張機能をインストールします。  
 ![](img/vscode_ext.png)  
 
 拡張機能をインストールしたら、
 拡張子を「.ipynb」としたファイルを作成して開くと、コードブロック単位での実行が可能になっていることがわかります。  
-![](img/vscode_ipynb.png)img  
+![](img/vscode_ipynb.png)
 
 コードブロックの実行は「Shift + Enter」です。
 以下のように、ブロック単位で実行できます。  
