@@ -1,5 +1,5 @@
 # Selenium
-Seleniumはブラウザの自動操作を可能にするライブラリです。
+Seleniumはブラウザの自動操作を可能にするライブラリです。  
 Chromeを操作することが多いので、ここではSeleniumを使うためのChromeの準備について記載します。
 
 ## Chromeドライバのインストール
@@ -44,16 +44,20 @@ Chromeで「chrome://version/」を開き，「プロフィール パス」に�
 （自分で開いたブラウザとは異なります。Seleniumのスクリプトを実行して起動したブラウザに設定してください。）
 https://chrome.google.com/webstore/detail/proxy-helper/mnloefcpaepkpmhaoipjkpikbnkmbnic/support?hl=ja
 
-拡張機能の設定を行います。（〇〇〇〇は会社名に置き換えてください。）
-GeneralのProxy Serversに以下を設定してください。
-- HTTPS PROXY: proxy1.〇〇〇〇info.jp
-- PORT: 8089
-PACのPac URLに以下を設定してください。
-- https://proxy.〇〇〇〇info.jp/pac/proxy.pac
-AuthentificationのAuthentificationに以下を設定してください。
-- Username: 社員番号
-- Password: COMPASSのパスワード
+拡張機能の設定を行います。（〇〇〇〇は会社名に置き換えてください。）  
+- GeneralのProxy Serversに以下を設定してください。
+  - HTTPS PROXY: proxy1.〇〇〇〇info.jp
+  - PORT: 8089
+- PACのPac URLに以下を設定してください。
+  - https://proxy.〇〇〇〇info.jp/pac/proxy.pac
+- AuthentificationのAuthentificationに以下を設定してください。
+  - Username: 社員番号
+  - Password: COMPASSのパスワード
 
 ## その他注意点
 スクリプトを実行してブラウザが起動している状態で、さらにスクリプトを実行してブラウザを起動させると、あとから実行させたプログラムをうまく動作しません。  
 実行の際には、前回実行して起動しているブラウザが残っていないかを確認して、起動していれる場合は閉じてから実行してください。
+
+
+Chromeをバージョンアップするとドライバのバージョンも変わるため、  
+Chromeのバージョンアップにより正しく動作しなくなった場合には、ドライバの再取得を行ってください。
